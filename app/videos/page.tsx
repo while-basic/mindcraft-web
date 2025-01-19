@@ -49,7 +49,7 @@ export default function Videos() {
         </h1>
         <p className="text-minecraft-secondary mb-8">
           Watch our AI in action as it creates amazing Minecraft builds. Learn techniques,
-          get inspired, and see what's possible with Mindcraft.
+          get inspired, and see what iss possible with Mindcraft.
         </p>
       </div>
 

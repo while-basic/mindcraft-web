@@ -2,6 +2,8 @@
 
 The official website for the Mindcraft project, showcasing AI-powered building in Minecraft.
 
+https://github.com/kolbytn/mindcraft
+
 ## Features
 
 - 📚 **Documentation**: Comprehensive guides and technical details
