@@ -2,20 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'MinecraftFont';
+  src: url('/fonts/minecraft.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+/* Minecraft-inspired button styles */
+.minecraft-button {
+  @apply px-4 py-2 font-minecraft text-white text-center cursor-pointer transition-all duration-200;
+  background-color: #727272;
+  border: 2px solid #373737;
+  border-bottom: 4px solid #373737;
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+}
+
+.minecraft-button:hover {
+  @apply transform -translate-y-0.5;
+  border-bottom: 4px solid #373737;
+}
+
+.minecraft-button:active {
+  @apply transform translate-y-0.5;
+  border-bottom: 2px solid #373737;
+  box-shadow: inset -2px -4px #0006;
+}
+
+/* Minecraft-inspired container styles */
+.minecraft-container {
+  @apply bg-white bg-opacity-90 rounded-lg p-6 shadow-minecraft;
+  border: 2px solid #373737;
+}
+
+/* Minecraft-inspired text styles */
+.minecraft-text {
+  @apply font-minecraft;
+  text-shadow: 2px 2px #000a;
 }

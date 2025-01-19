@@ -1,0 +1,16 @@
+{
+  "line_length": 100,
+  "format_on_save": true,
+  "javascript": {
+    "formatter": "prettier",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "typescript": {
+    "formatter": "prettier",
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
