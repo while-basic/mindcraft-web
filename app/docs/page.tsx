@@ -197,7 +197,7 @@ export default function Documentation() {
                     </p>
                     <ul className="list-disc list-inside text-gray-200 mb-6 space-y-2">
                       <li>Bot backend LLMs to use for chat and embeddings</li>
-                      <li>Prompts used to influence the bot's behavior</li>
+                      <li>Prompts used to influence the bot behavior</li>
                       <li>Examples help the bot perform tasks</li>
                     </ul>
 
