@@ -5,24 +5,47 @@ import YouTube from 'react-youtube';
 
 const videos = [
   {
-    id: 'VIDEO_ID_1',
-    title: 'Building a Medieval Castle with AI',
-    description: 'Watch as our AI generates and builds an entire medieval castle in minutes.',
+    id: 'KxaPYhfJV4U',
+    title: 'Mindcraft AI Builds a Castle in Minecraft',
+    description: 'Watch as our AI assistant builds an impressive medieval castle structure.',
     tags: ['castle', 'medieval', 'large-scale'],
   },
   {
-    id: 'VIDEO_ID_2',
-    title: 'Modern House Generation',
-    description: 'See how Mindcraft creates contemporary house designs automatically.',
+    id: 'uLRKXEHxZ-U',
+    title: 'AI Builds a Fantasy Village',
+    description: 'See how Mindcraft creates an entire fantasy village from scratch.',
+    tags: ['village', 'fantasy', 'large-scale'],
+  },
+  {
+    id: 'IeXadWbvDiE',
+    title: 'Building a Modern House with AI',
+    description: 'Mindcraft AI designs and constructs a contemporary house.',
     tags: ['modern', 'house', 'residential'],
   },
   {
-    id: 'VIDEO_ID_3',
-    title: 'Fantasy Tree House Tutorial',
-    description: 'Learn how to use Mindcraft to create magical tree houses in your world.',
-    tags: ['fantasy', 'tutorial', 'nature'],
+    id: 'kbf9QJJn-UQ',
+    title: 'AI Generated Tree House',
+    description: 'Creating a magical tree house using Mindcraft AI.',
+    tags: ['fantasy', 'nature', 'house'],
   },
-  // Add more videos as needed
+  {
+    id: 'VXQ-AnQ6N6A',
+    title: 'Underground Base Build',
+    description: 'Watch the AI construct an elaborate underground base.',
+    tags: ['underground', 'base', 'large-scale'],
+  },
+  {
+    id: 'Xd5PLYl4Q5Q',
+    title: 'Mindcraft Installation Tutorial',
+    description: 'Step-by-step guide to installing and setting up Mindcraft.',
+    tags: ['tutorial', 'setup', 'guide'],
+  },
+  {
+    id: 'NTHWMk5pcYs',
+    title: 'AI Building Challenges',
+    description: 'Testing Mindcraft AI with various building challenges.',
+    tags: ['challenge', 'showcase', 'variety'],
+  }
 ];
 
 const container = {

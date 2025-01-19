@@ -14,7 +14,7 @@ const downloads = [
     icon: CubeIcon,
     items: [
       {
-        name: 'Andy',
+        name: 'Sweaterdog/Andy-v3.5-Beta',
         description: 'Sweaterdog fine tuned, Qwen2.5-7B-bnb-4bit',
         size: '15.2 GB',
         version: '1.0.0',
@@ -28,12 +28,20 @@ const downloads = [
     icon: WrenchScrewdriverIcon,
     items: [
       {
-        name: 'Andy-v3.5',
+        name: 'Sweaterdog/MindCraft-LLM-tuning',
         description: 'Latest dataset from Sweaterdog',
-        size: '45MB',
+        size: '270 kb',
         version: '1.0.0',
-        requirements: 'Windows/Mac/Linux',
-        downloadUrl: '#',
+        requirements: 'Windows/Mac',
+        downloadUrl: 'https://huggingface.co/datasets/Sweaterdog/MindCraft-LLM-tuning',
+      },  
+      {
+        name: 'Sweaterdog/Andy-v3.5-Beta',
+        description: 'Dataset from Sweaterdog',
+        size: '4.01 MB',
+        version: '1.0.0',
+        requirements: 'Windows/Mac',
+        downloadUrl: 'https://huggingface.co/datasets/Sweaterdog/Andy-v3.5-Beta',
       },
     ],
   },
@@ -42,18 +50,15 @@ const downloads = [
     icon: DocumentTextIcon,
     items: [
       {
-        name: 'Installation Video',
-        description: 'Quick start guide to installation',
-        size: '5MB',
-        version: '2024.1',
-        requirements: 'PDF Reader',
-        downloadUrl: '#',
+        name: 'Official Installation Video',
+        description: 'Full start guide to installation',
+        downloadUrl: 'https://www.youtube.com/watch?v=gRotoL8P8D8&t=1s',
       },
       {
         name: 'Github Repository',
         description: 'Technical documentation for developers',
-        size: '2MB',
-        version: '2024.1',
+        size: '',
+        version: '',
         requirements: 'Web Browser',
         downloadUrl: 'https://github.com/kolbytn/mindcraft',
       },
