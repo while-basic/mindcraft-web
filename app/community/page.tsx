@@ -101,10 +101,9 @@ export default function Community() {
         </h2>
         <div className="aspect-video rounded-lg overflow-hidden bg-minecraft-stone/20">
           <iframe
-            src="https://discord.com/widget?id=YOUR_DISCORD_SERVER_ID&theme=dark"
+            src="https://discord.com/widget?id=1213576848692117545&theme=dark"
             width="100%"
-            height="100%"
-            allowTransparency={true}
+            height="500"
             frameBorder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
           />
