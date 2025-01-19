@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import {
   ChatBubbleLeftRightIcon,
   UserGroupIcon,
@@ -47,7 +48,7 @@ const communityFeatures = [
   },
 ];
 
-const upcomingEvents = [
+const eventData = [
   {
     title: 'Castle Building Challenge',
     date: 'February 1, 2024',
@@ -57,6 +58,17 @@ const upcomingEvents = [
 ];
 
 export default function Community() {
+  const [mounted, setMounted] = useState(false);
+  const [events] = useState(eventData);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <div className="space-y-8">
       <div className="minecraft-container">
@@ -116,7 +128,7 @@ export default function Community() {
           Upcoming Events
         </h2>
         <div className="space-y-6">
-          {upcomingEvents.map((event) => (
+          {events.map((event) => (
             <div
               key={event.title}
               className="border-2 border-minecraft-stone rounded-lg p-6"
