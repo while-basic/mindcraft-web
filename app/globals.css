@@ -10,40 +10,39 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --minecraft-grass: #5C9C3E;
+  --minecraft-dirt: #866043;
+  --minecraft-stone: #828282;
+  --minecraft-wood: #9C7F4A;
+  --minecraft-leaves: #3D5E1F;
+  --minecraft-water: #2F5299;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Base styles */
+html {
+  background: black;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
+  background: black;
+  color: white;
+  min-height: 100vh;
 }
 
 /* Minecraft-inspired button styles */
 .minecraft-button {
   @apply px-4 py-2 font-minecraft text-white text-center cursor-pointer transition-all duration-200;
-  background-color: #727272;
+  background-color: var(--minecraft-stone);
   border: 2px solid #373737;
   border-bottom: 4px solid #373737;
   box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+  image-rendering: pixelated;
 }
 
 .minecraft-button:hover {
   @apply transform -translate-y-0.5;
   border-bottom: 4px solid #373737;
+  filter: brightness(1.2);
 }
 
 .minecraft-button:active {
@@ -54,12 +53,84 @@ body {
 
 /* Minecraft-inspired container styles */
 .minecraft-container {
-  @apply bg-white bg-opacity-90 rounded-lg p-6 shadow-minecraft;
+  @apply rounded p-6;
   border: 2px solid #373737;
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+  image-rendering: pixelated;
 }
 
 /* Minecraft-inspired text styles */
 .minecraft-text {
   @apply font-minecraft;
   text-shadow: 2px 2px #000a;
+  letter-spacing: 0.05em;
+}
+
+/* Minecraft block animations */
+@keyframes hover {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.hover-animation {
+  animation: hover 2s ease-in-out infinite;
+}
+
+/* Minecraft-inspired grid pattern */
+.minecraft-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 16px 16px;
+  image-rendering: pixelated;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+/* Minecraft Particle Effects */
+@keyframes particle {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(var(--x-end)) scale(0);
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+}
+
+.particle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 1px;
+  image-rendering: pixelated;
+}
+
+.particle-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Minecraft Block Hover Effect */
+.block-hover {
+  transition: transform 0.2s ease-in-out;
+  transform-origin: center bottom;
+}
+
+.block-hover:hover {
+  transform: scale(1.05) translateY(-5px);
 }

@@ -48,8 +48,8 @@ export default function Videos() {
           Video Showcase
         </h1>
         <p className="text-minecraft-secondary mb-8">
-          Watch our AI in action as it creates amazing Minecraft builds. Learn techniques,
-          get inspired, and see what iss possible with Mindcraft.
+          Watch our models in action as it creates amazing Minecraft builds. Learn techniques,
+          get inspired, and see what is possible with Mindcraft.
         </p>
       </div>
 

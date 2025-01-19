@@ -20,7 +20,7 @@ const communityFeatures = [
   },
   {
     title: 'Build Showcase',
-    description: 'Share your generated builds with the community and get feedback from other builders.',
+    description: 'View generated builds and collect feedback from other builders.',
     icon: GlobeAltIcon,
     action: {
       text: 'View Showcase',
@@ -53,12 +53,6 @@ const upcomingEvents = [
     date: '2024-02-01',
     description: 'Create the most impressive castle using Mindcraft AI. Community voting for the best builds.',
     prize: '1st Place: Custom Discord Role + Feature on Website',
-  },
-  {
-    title: 'AI Building Workshop',
-    date: '2024-02-15',
-    description: 'Learn advanced techniques for controlling and customizing AI builds.',
-    prize: 'Live Q&A with Mindcraft developers',
   },
 ];
 
@@ -157,7 +151,7 @@ export default function Community() {
         </h2>
         <ul className="list-disc list-inside space-y-2 text-minecraft-secondary">
           <li>Be respectful and helpful to other community members</li>
-          <li>Share your knowledge and experiences with AI building</li>
+          <li>Share your knowledge and experiences with building</li>
           <li>Give credit when using or modifying others&apos; builds</li>
           <li>Report any issues or bugs through the appropriate channels</li>
           <li>Follow Minecraft&apos;s terms of service and guidelines</li>
