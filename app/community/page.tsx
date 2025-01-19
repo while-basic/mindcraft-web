@@ -50,7 +50,7 @@ const communityFeatures = [
 const upcomingEvents = [
   {
     title: 'Castle Building Challenge',
-    date: '2024-02-01',
+    date: 'February 1, 2024',
     description: 'Create the most impressive castle using Mindcraft AI. Community voting for the best builds.',
     prize: '1st Place: Custom Discord Role + Feature on Website',
   },
@@ -130,7 +130,7 @@ export default function Community() {
                 </div>
                 <div className="text-right">
                   <div className="font-minecraft text-minecraft-secondary">
-                    {new Date(event.date).toLocaleDateString()}
+                    {event.date}
                   </div>
                   <div className="text-sm text-minecraft-primary mt-2">
                     {event.prize}
