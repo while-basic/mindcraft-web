@@ -1,5 +1,7 @@
 'use client';
 
+import VisitCounter from './VisitCounter';
+
 function InteractiveLink() {
   const handleClick = (e: React.MouseEvent) => {
     const colors = ['#5C9C3E', '#866043', '#828282', '#9C7F4A', '#3D5E1F', '#2F5299'];
@@ -39,12 +41,13 @@ function InteractiveLink() {
 
 export default function Footer() {
   return (
-    <footer className="py-8 border-t border-[#373737] bg-black bg-opacity-50">
+    <footer className="py-8 border-t border-[#373737] bg-black bg-opacity-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-white text-opacity-90 minecraft-text">
           Made with 🤍 from <InteractiveLink />
         </p>
       </div>
+      <VisitCounter />
     </footer>
   );
 } 
