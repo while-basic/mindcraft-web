@@ -20,7 +20,7 @@ const communityFeatures = [
   },
   {
     title: 'Build Showcase',
-    description: 'Share your AI-generated builds with the community and get feedback from other builders.',
+    description: 'Share your generated builds with the community and get feedback from other builders.',
     icon: GlobeAltIcon,
     action: {
       text: 'View Showcase',
