@@ -1,6 +1,6 @@
 # Mindcraft Website
 
-The official website for the Mindcraft project, showcasing AI-powered building in Minecraft.
+A community website for the Mindcraft project, showcasing AI-powered building in Minecraft.
 
 ## Features
 
